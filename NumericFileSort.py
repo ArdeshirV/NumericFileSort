@@ -53,8 +53,7 @@ def RetrieveNumericPrefix(string):
 
 
 def error(error_code, error_messsage):
-    print("{0}Error:{1} {2}{3}".format(
-        c.BoldRed, c.Red, error_messsage, c.Normal), file=sys.stderr)
+    print(f'{c.BoldRed}Error:{c.Red} {error_messsage}{c.Normal}', file=sys.stderr)
     if error_code != 0:
         exit(error_code)
 
